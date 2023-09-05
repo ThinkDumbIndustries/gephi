@@ -264,7 +264,7 @@ public class StandardGraphIO implements GraphIO, VizArchitecture {
         if (rightButtonMoving[0] != -1) {
             //The right button is pressed
             float proche = graphDrawable.cameraTarget[2] - graphDrawable.cameraLocation[2];
-            proche = proche / 300;
+            proche = proche / 300; // bookmark
 
             graphDrawable.cameraTarget[0] += (x - rightButtonMoving[0]) * proche;
             graphDrawable.cameraTarget[1] += (y - rightButtonMoving[1]) * proche;
